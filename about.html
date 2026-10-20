@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | OceanCare</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>OceanCare</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="">Marine Animals</a>
+            <a href="">Ocean Pollution</a>
+            <a href="">Take Action</a>
+            <a href="about.html">About Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <h2>About OceanCare</h2>
+            <p>
+                <strong>OceanCare</strong> is a website dedicated to raising awareness
+                about ocean pollution and protecting marine life.
+                We want to help people understand the importance of healthy oceans.
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is to encourage people to reduce plastic waste,
+                protect marine animals, and keep our oceans clean.
+                <em>Every small action makes a difference.</em>
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>Meet Our Team</h2>
+            <p>We are the team behind OceanCare.</p>
+
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="member1.jpg" alt="Team Member 1">
+                    <h3>Member 1</h3>
+                    <p>Team Member</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="member2.jpg" alt="Team Member 2">
+                    <h3>Member 2</h3>
+                    <p>Team Member</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="member3.jpg" alt="Team Member 3">
+                    <h3>Member 3</h3>
+                    <p>Team Member</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="about-section">
+            <h2>Contact Us</h2>
+            <p>Have a question or suggestion? Send us a message.</p>
+
+                <form id="contact-form">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                     <button type="submit">Send Message</button>
+                </form>
+
+                     <p id="thank-you" style="display: none;">Thank you for your feedback!</p>
+        </section>
+
+            <script>
+                document.getElementById("contact-form").addEventListener("submit", function(event) {
+                event.preventDefault();
+                this.style.display = "none";
+                document.getElementById("thank-you").style.display = "block";
+                });
+            </script>
+
+    </main>
+
+    <footer>
+        <h3>OceanCare</h3>
+        <p>Every small action makes a difference.</p>
+        <p>&copy; 2026 OceanCare</p>
+    </footer>
+</body>
+</html>

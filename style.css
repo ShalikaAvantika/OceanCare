@@ -1,0 +1,200 @@
+/*index*/
+body {
+    background-color: #f0f7f8;
+    color: #183b4e;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+header {
+    background-color: #102f50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #79d6d0;
+}
+
+main {
+    padding: 30px;
+    flex: 1;
+}
+
+.home-section {
+    background-color: white;
+    padding: 22px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.home-section h2 {
+    color: #102f50;
+    font-size: 24px;
+}
+
+.home-section p {
+    color: #426579;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.home-section a {
+    color: #087e83;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-section a:hover {
+    text-decoration: underline;
+}
+
+.home-feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-direction: row; 
+}
+
+.home-feature .home-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.home-feature .home-image {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.home-feature .home-image img {
+    width: 100%;
+    height: 280px; 
+    max-width: 450px; 
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #102f50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer h3 {
+    font-size: 22px;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+/*Index*/
+
+/* About Us */
+.about-section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.about-section h2 {
+    color: #102f50;
+}
+
+.about-section p {
+    color: #426579;
+    line-height: 1.6;
+}
+
+/* Meet Our Team */
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.team-member {
+    text-align: center;
+    width: 180px;
+}
+
+.team-member img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    color: #102f50;
+}
+
+.team-member p {
+    color: #426579;
+}
+
+/* Contact Us Form */
+form {
+    max-width: 500px;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    color: #102f50;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #b8cdd6;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #087e83;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #065f63;
+}
+/*About Us*/
