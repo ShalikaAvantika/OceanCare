@@ -1,0 +1,181 @@
+/* Ukuran Halaman */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Judul Atas */
+.pollution-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pollution-title h2 {
+    color: #102f50;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.pollution-title p {
+    color: #666;
+    font-size: 15px;
+}
+
+/* Sub Judul Section */
+.sub-title {
+    color: #102f50;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* Kotak Penjelasan Biasa */
+.pollution-box {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.pollution-box h3 {
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.pollution-box p, .pollution-box li {
+    color: #475569;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.pollution-box ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.pollution-box li {
+    margin-bottom: 8px;
+}
+
+/* Layout Kartu 3 Kolom */
+.pollution-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Style Dasar Kartu Ber-background Foto */
+.card-bg {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;             /* Tulisan dibuat warna putih agar kontras */
+    padding: 0;               /* Reset padding bawaan */
+    overflow: hidden;
+    border-radius: 12px;
+    border: none;
+    min-height: 250px;        /* <-- PENTING: Supaya kartunya punya tinggi dan fotonya muncul */
+}
+
+/* Lapisan Gelap (Overlay) Agar Teks Terbaca Jelas */
+.card-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4));
+    padding: 25px 20px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Taruh teks agak ke bawah agar estetik */
+}
+
+.card-overlay h4 {
+    color: #ffffff;           /* Judul putih terang */
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.card-overlay p {
+    color: #e2e8f0;           /* Deskripsi putih agak lembut */
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* --- MENGATUR FOTO MASING-MASING KARTU --- */
+
+.card-plastics {
+    background-image: url('plastics.jpg'); /* Ganti dengan nama file fotomu */
+}
+
+.card-kimia {
+    background-image: url('kimia.jpg');   /* Ganti dengan nama file fotomu */
+}
+
+.card-oil {
+    background-image: url('limbah minyak.jpg');  /* Ganti dengan nama file fotomu */
+}
+
+/* Style untuk Kotak Utama Ber-background Foto */
+.box-bg {
+    position: relative;
+    background-image: url('beachpolution.jpg'); /* Ganti dengan nama file foto lautmu */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+}
+
+/* Lapisan Gelap Transparan di Atas Foto */
+.box-overlay {
+    background: linear-gradient(135deg, rgba(16, 47, 80, 0.9), rgba(0, 0, 0, 0.7)); /* Gradasi biru tua ke hitam */
+    padding: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+/* Warna Teks di Dalam Kotak Ber-background */
+.box-bg h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.box-bg p {
+    color: #e2e8f0;
+    margin: 0;
+}
+/* Style Kotak Pengertian Ber-background Foto */
+.box-bg {
+    position: relative;
+    background-image: url('ocean-bg.jpg'); /* Ganti dengan nama file foto lautmu */
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+    border-radius: 12px;
+}
+
+/* Lapisan Gelap Transparan di Atas Foto */
+.box-overlay {
+    background: linear-gradient(135deg, rgba(16, 47, 80, 0.85), rgba(0, 0, 0, 0.75));
+    padding: 25px 30px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.box-overlay h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.box-overlay p {
+    color: #e2e8f0;
+    margin: 0;
+    line-height: 1.6;
+}
