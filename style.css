@@ -114,6 +114,31 @@ footer p {
     font-size: 14px;
     line-height: 1.6;
 }
+
+
+/*Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #b8cdd6;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #102f50;
+    color: white;
+}
+
+td {
+    color: #426579;
+}
+/* Table */
+
 /*Index*/
 
 /* About Us */
